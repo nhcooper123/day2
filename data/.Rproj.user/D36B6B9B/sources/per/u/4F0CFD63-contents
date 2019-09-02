@@ -1,0 +1,79 @@
+library(tidyverse)
+gr <- read.csv("plant.growth.rate.csv")
+model1 <- lm(plant.growth.rate ~ soil.moisture.content, data = gr)
+
+ggplot(gr, aes(x = soil.moisture.content, 
+               y = plant.growth.rate)) +
+  geom_point(col = "cornflowerblue", alpha = 0.5) +
+  theme_bw() +
+  geom_smooth(method = lm)
+
+newX <- expand.grid(soil.moisture.content =
+                      seq(from = 0, to = 2, length = 50))
+
+newY <- predict(model1, newdata = newX, interval = "confidence")
+
+linedata <- data.frame(newX, newY)
+
+linedata <- linedata %>%
+  rename(plant.growth.rate = fit)
+
+ggplot(gr, aes(x = soil.moisture.content, 
+               y = plant.growth.rate)) +
+  geom_point(col = "cornflowerblue", alpha = 0.5) +
+  theme_bw() +
+  geom_smooth(data = linedata, aes(ymin = lwr, ymax = upr), 
+              stat = "identity")
+
+limpet <- read.csv("limpet.csv")
+model <- lm(EGGS ~ DENSITY*SEASON, data = limpet)
+
+EGGS ~ DENSITY + SEASON + DENSITY:SEASON
+EGGS ~ DENSITY * SEASON
+
+newX <- expand.grid(DENSITY = seq(from = 5, to = 50, length = 50),
+                    SEASON = c("spring", "summer"))
+
+newY <- predict(model, newdata = newX, interval = "confidence")
+
+linedata2 <- data.frame(newX, newY)
+
+linedata2 <- 
+  linedata2 %>%
+  rename(EGGS = fit)
+
+ggplot(limpet, aes(x = DENSITY, y = EGGS, color = SEASON, fill = SEASON)) +
+  geom_point() +
+  theme_bw() +
+  geom_smooth(data = linedata2, aes(ymin = lwr, ymax = upr), 
+              stat = "identity") +
+  scale_fill_manual(values = c("springgreen", "purple"))
+
+dd <- read.csv("ladybirds.csv")
+lb <- dd %>%
+      group_by(Habitat, colour) %>%
+      summarise(obs = sum(number))
+
+lb_matrix <- xtabs(obs ~ Habitat + colour, data = lb)
+chisq.test(lb_matrix)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

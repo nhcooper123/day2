@@ -1,0 +1,41 @@
+]0;~/Google Drive/TEACHING/1. NHM Teaching/NHM R/data[?1034hLSCIMACC02R80ZDGFWL:data natac4$ [KLSCIMACC02R80ZDGFWL:data natac4$ [KLSCIMACC02R80ZDGFWL:data natac4$ [KLSCIMACC02R80ZDGFWL:data natac4$ [KLSCIMACC02R80ZDGFWL:data natac4$ git config --globea[K[Kal user.name ""N"a"t"a"l"i"e" "C" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co""o"p"e"r"[1P"[1P"[1P"[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[C[Kusr[Ker.email natalie@nh m.ac.uk[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klist
+core.excludesfile=~/.gitignore
+core.legacyheaders=false
+core.quotepath=false
+core.pager=less -r
+mergetool.keepbackup=true
+push.default=simple
+color.ui=auto
+color.interactive=auto
+repack.usedeltabaseoffset=true
+alias.s=status
+alias.a=!git add . && git status
+alias.au=!git add -u . && git status
+alias.aa=!git add . && git add -u . && git status
+alias.c=commit
+alias.cm=commit -m
+alias.ca=commit --amend
+alias.ac=!git add . && git commit
+alias.acm=!git add . && git commit -m
+alias.l=log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+alias.ll=log --stat --abbrev-commit
+alias.lg=log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+alias.llg=log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+alias.d=diff
+alias.master=checkout master
+alias.spull=svn rebase
+alias.spush=svn dcommit
+alias.alias=!git config --list | grep 'alias\.' | sed 's/alias\.\([^=]*\)=\(.*\)/\1\	 => \2/' | sort
+include.path=~/.gitcinclude
+include.path=.githubconfig
+include.path=.gitcredential
+diff.exif.textconv=exif
+credential.helper=osxkeychain
+user.name=Natalie Cooper
+user.email=natalie.cooper@nhm.ac.uk
+core.editor=usr/bin/nano --tempfile
+color.ui=true
+credential.helper=osxkeychain
+]0;~/Google Drive/TEACHING/1. NHM Teaching/NHM R/dataLSCIMACC02R80ZDGFWL:data natac4$ [KLSCIMACC02R80ZDGFWL:data natac4$ 
